@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dating Information Notice</title>
+    <style>
+        /* 
+         * TECHNICAL REQUIREMENTS:
+         * - Pure HTML + CSS (No frameworks)
+         * - Mobile-first responsive design
+         * - Fast-loading, clean layout
+         * - Neutral colors (white/gray/blue)
+         */
+
+        /* Reset and Base Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f4f6f8; /* Neutral light gray background */
+            color: #333333; /* Dark gray text for readability */
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        /* Layout Container - Mobile First default */
+        .container {
+            width: 100%;
+            max-width: 600px; /* Limits width on larger screens */
+            margin: 0 auto;
+            padding: 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* 1) Minimal Neutral Header */
+        .header {
+            text-align: center;
+            padding: 10px 0;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .header-text {
+            font-size: 0.85rem;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 500;
+        }
+
+        /* Main Content Card */
+        .card {
+            background: #ffffff;
+            padding: 30px 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Subtle shadow */
+            margin-bottom: 20px;
+        }
+
+        /* 2) H1 Headline (Neutral, Non-sexual) */
+        h1 {
+            font-size: 1.5rem;
+            color: #2c3e50; /* Neutral dark blue/gray */
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        /* 3) Explanation Paragraph */
+        .explanation {
+            font-size: 1rem;
+            margin-bottom: 25px;
+            color: #4a4a4a;
+        }
+        
+        /* Compliance Disclosure */
+        .disclosure {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            margin-top: 10px;
+            display: block;
+            font-style: italic;
+            border-left: 3px solid #bdc3c7;
+            padding-left: 10px;
+        }
+
+        /* 4) Feature Bullet List */
+        .features {
+            list-style: none;
+            margin-bottom: 25px;
+            padding: 0 10px;
+        }
+        
+        .features li {
+            margin-bottom: 12px;
+            padding-left: 24px;
+            position: relative;
+            color: #34495e;
+        }
+        
+        /* Custom bullet points */
+        .features li::before {
+            content: "✓"; /* Neutral checkmark */
+            color: #3498db; /* Neutral blue */
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        /* 5) Light Social Proof */
+        .social-proof {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 25px;
+            text-align: center;
+            border: 1px solid #e9ecef;
+        }
+        
+        .social-proof p {
+            font-size: 0.9rem;
+            color: #555;
+            margin: 5px 0;
+            font-weight: 500;
+        }
+
+        /* 6) Primary CTA Button */
+        .cta-container {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        
+        /* CTA Button Styles - Neutral and compliant */
+        .cta-button {
+            display: inline-block;
+            background-color: #2980b9; /* Solid neutral blue */
+            color: white;
+            text-decoration: none;
+            padding: 16px 32px;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            width: 100%;
+            max-width: 320px;
+            transition: background-color 0.2s ease;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .cta-button:hover {
+            background-color: #2471a3; /* Slightly darker on hover */
+        }
+        
+        .cta-button:active {
+            transform: translateY(1px);
+        }
+
+        /* 7) Compliance Footer */
+        .footer {
+            margin-top: auto;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 0.75rem;
+            color: #95a5a6;
+            border-top: 1px solid #e0e0e0;
+        }
+        
+        .footer p {
+            margin-bottom: 8px;
+        }
+        
+        .footer-links {
+            margin-top: 10px;
+        }
+        
+        .footer-links a {
+            color: #7f8c8d;
+            text-decoration: underline;
+            margin: 0 8px;
+        }
+        
+        .footer-links a:hover {
+            color: #555;
+        }
+        
+        /* Responsive Adjustments for Desktop */
+        @media (min-width: 480px) {
+            .container {
+                padding: 40px 20px;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .card {
+                padding: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- 1) Minimal neutral header (text-only) -->
+        <header class="header">
+            <div class="header-text">Dating Information Notice</div>
+        </header>
+
+        <main class="card">
+            <!-- 2) H1 headline (neutral, non-sexual) -->
+            <h1>Local Singles Near You Are Online</h1>
+
+            <!-- 3) Explanation paragraph -->
+            <div class="explanation">
+                <p>You are seeing this page because you may be located in an area where this dating platform is currently available. This is an informational step before proceeding.</p>
+                <p>This platform allows users to connect for social interaction and companionship.</p>
+                
+                <!-- Mandatory Disclosures -->
+                <span class="disclosure">
+                    This is a dating advertisement. Some profiles may be fictional.
+                </span>
+            </div>
+
+            <!-- 4) Feature bullet list (no promises) -->
+            <ul class="features">
+                <li>Chat with other users</li>
+                <li>Exchange photos</li>
+                <li>Browse nearby profiles</li>
+                <li>Connect based on shared interests</li>
+            </ul>
+
+            <!-- 5) Light social proof (non-exaggerated) -->
+            <div class="social-proof">
+                <p>Several members are currently online</p>
+                <p>Recent activity detected in your area</p>
+            </div>
+
+            <!-- 6) One primary CTA button (redirects to offer) -->
+            <div class="cta-container">
+                <a href="https://www.passingcars.wiki/?sl=6049252-2df9d&pub_click_id={External_ID_from_traffic_source}&site={subID}&pub_sub_id={sub_subID}" class="cta-button">Check Availability</a>
+            </div>
+        </main>
+
+        <!-- 7) Compliance footer (mandatory) -->
+        <footer class="footer">
+            <p>18+ only &bull; Dating advertisement &bull; Some profiles may be fictional</p>
+            <p>Availability and features may vary by location.</p>
+            <p>Online activity statements are general and may change.</p>
+            
+            <div class="footer-links">
+                <!-- Placeholders for legal pages -->
+                <a href="/privacy.html">Privacy Policy</a>
+                <a href="/terms.html">Terms of Service</a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- No external scripts or tracking codes -->
+</body>
+</html>
